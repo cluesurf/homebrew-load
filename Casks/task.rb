@@ -1,10 +1,12 @@
-class Task < Formula
+cask "task" do
+  name "task"
   desc "Common Actions Interface Dependencies"
   homepage "https://github.com/termsurf/task.js"
   url "https://github.com/termsurf/task.js"
   version "0.0.1"
   sha256 ""
-  license "MIT"
+
+  depends_on macos: ">= :sierra"
 
   depends_on "openjdk"
   depends_on "mactex-no-gui"

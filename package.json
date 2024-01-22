@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "load:make": "brew install ./Formula/task.rb --force"
+    "load:make": "brew install --cask termsurf/load/task",
+    "link:brew": "ln -s $(pwd) `brew --repo`/Library/Taps/termsurf"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.191",
