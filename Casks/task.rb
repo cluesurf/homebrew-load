@@ -3,7 +3,7 @@ cask "task" do
   desc "Common Actions Interface Dependencies"
   homepage "https://github.com/termsurf/task.js"
   url "https://github.com/termsurf/homebrew-load"
-  version "0.0.16"
+  version "0.0.20"
   sha256 "f6eb7406f21ac3cc54580c4bb4d232d2f8ad7d63dc0d6159276f21cfa79cecea"
 
   depends_on macos: ">= :sierra"
@@ -33,5 +33,6 @@ cask "task" do
     system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "github.com/klauspost/asmfmt/cmd/asmfmt@ef134b9cec704e2b7b336fb02153b7d1a58247da"]
     system_command "pip3", args: ["install", "nbconvert"]
     system_command "pip3", args: ["install", "docx2pdf"]
+    system_command "#{staged_path}/install.sh"
   end
 end
