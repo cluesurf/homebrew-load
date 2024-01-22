@@ -3,14 +3,14 @@ cask "task" do
   desc "Common Actions Interface Dependencies"
   homepage "https://github.com/termsurf/task.js"
   url "https://github.com/termsurf/homebrew-load"
-  version "0.0.1"
+  version "0.0.4"
 
   # depends_on macos: ">= :sierra"
 
   depends_on formula: "openjdk"
   depends_on cask: "mactex-no-gui"
-  depends_on formula: "calibre"
-  depends_on formula: "libreoffice"
+  depends_on cask: "calibre"
+  depends_on cask: "libreoffice"
   depends_on formula: "imagemagick"
   depends_on formula: "fontforge"
   depends_on formula: "ffmpeg"
