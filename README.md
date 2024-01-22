@@ -25,6 +25,12 @@ brew install termsurf/load/task
 
 To use `docx2pdf` you need to have the Microsoft Word app installed on your machine as well.
 
+## Development
+
+```
+brew upgrade --cask
+```
+
 ## License
 
 MIT
