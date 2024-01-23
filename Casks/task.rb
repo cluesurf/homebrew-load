@@ -33,6 +33,6 @@ cask "task" do
     system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "github.com/klauspost/asmfmt/cmd/asmfmt@ef134b9cec704e2b7b336fb02153b7d1a58247da"]
     system_command "pip3", args: ["install", "nbconvert"]
     system_command "pip3", args: ["install", "docx2pdf"]
-    system_command "install.sh"
+    # system_command "#{staged_path}/install.sh"
   end
 end
