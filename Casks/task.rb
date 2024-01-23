@@ -2,9 +2,9 @@ cask "task" do
   name "task"
   desc "Common Actions Interface Dependencies"
   homepage "https://github.com/termsurf/task"
-  url "./Casks/task.install.zip"
+  url "https://github.com/termsurf/homebrew-load/raw/make/Casks/task.zip"
   version "0.0.28"
-  sha256 "f6eb7406f21ac3cc54580c4bb4d232d2f8ad7d63dc0d6159276f21cfa79cecea"
+  sha256 "68b79d6f77ff1a78dfa874e0da28b048dacf3c6812cf4d8d647421fc1c8e24f9"
 
   depends_on macos: ">= :sierra"
 
@@ -30,7 +30,8 @@ cask "task" do
   depends_on formula: "php-cs-fixer"
   depends_on formula: "swift"
   depends_on formula: "rust"
-  installer script: "#{staged_path}/task.install.sh"
+
+  installer script: "Casks/task.install.sh"
 
   postflight do
     system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "github.com/klauspost/asmfmt/cmd/asmfmt@ef134b9cec704e2b7b336fb02153b7d1a58247da"]
