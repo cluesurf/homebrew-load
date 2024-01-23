@@ -4,6 +4,7 @@ class CalibrePatch < Formula
   desc "Patch for Calibre to auto add $PATH variable."
   homepage "https://github.com/termsurf/task"
   url "https://github.com/termsurf/homebrew-load"
+  version "0.0.1"
 
   depends_on "calibre"
 
