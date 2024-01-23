@@ -5,7 +5,7 @@ class CalibrePatch < Formula
   homepage "https://github.com/termsurf/task"
   url "https://github.com/termsurf/homebrew-load"
 
-  depends_on cask: "calibre"
+  depends_on "calibre"
 
   def caveats
     <<~EOS
