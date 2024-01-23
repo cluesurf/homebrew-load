@@ -3,7 +3,7 @@ cask "task" do
   desc "Common Actions Interface Dependencies"
   homepage "https://github.com/termsurf/task"
   url "https://github.com/termsurf/homebrew-load/raw/make/Tool/task.zip"
-  version "0.0.30"
+  version "0.0.34"
   sha256 "c065d769b89fe209152a3c64034bd46355c01868c0ebbbb06173870d8324a649"
 
   depends_on macos: ">= :sierra"
@@ -30,11 +30,18 @@ cask "task" do
   depends_on formula: "php-cs-fixer"
   depends_on formula: "swift"
   depends_on formula: "rust"
+  depends_on formula: "rustfmt"
+  depends_on formula: "llvm"
+  depends_on formula: "clang-format"
+  depends_on formula: "swift-format"
+  depends_on cask: "julia"
+  depends_on formula: "php"
 
   installer script: "install.sh"
 
   postflight do
     system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "github.com/klauspost/asmfmt/cmd/asmfmt@ef134b9cec704e2b7b336fb02153b7d1a58247da"]
+    system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "mvdan.cc/sh/v3/cmd/shfmt@v3.7.0"]
     system_command "pip3", args: ["install", "nbconvert"]
     system_command "pip3", args: ["install", "docx2pdf"]
   end
