@@ -34,18 +34,6 @@ Might have to run this first.
 brew remove --force --cask calibre
 ```
 
-### Calibre Patch
-
-```bash
-brew install termsurf/load/calibre-patch
-```
-
-Might have to run this first.
-
-```bash
-brew remove --force --cask calibre
-```
-
 ## Development
 
 ```
