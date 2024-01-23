@@ -20,14 +20,29 @@
 
 ```bash
 brew tap termsurf/load
+```
+
+### Task
+
+```bash
 brew install termsurf/load/task
 ```
 
-To use `docx2pdf` you need to have the Microsoft Word app installed on your machine as well.
+Might have to run this first.
 
-Might have to do this before that stuff:
-
+```bash
+brew remove --force --cask calibre
 ```
+
+### Calibre Patch
+
+```bash
+brew install termsurf/load/calibre-patch
+```
+
+Might have to run this first.
+
+```bash
 brew remove --force --cask calibre
 ```
 
