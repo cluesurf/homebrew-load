@@ -28,6 +28,8 @@ cask "task" do
   depends_on formula: "atool"
   depends_on formula: "perltidy"
   depends_on formula: "php-cs-fixer"
+  depends_on formula: "swift"
+  depends_on formula: "rust"
 
   postflight do
     system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "github.com/klauspost/asmfmt/cmd/asmfmt@ef134b9cec704e2b7b336fb02153b7d1a58247da"]
