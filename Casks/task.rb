@@ -1,9 +1,9 @@
 cask "task" do
   name "task"
   desc "Common Actions Interface Dependencies"
-  homepage "https://github.com/termsurf/task.js"
+  homepage "https://github.com/termsurf/task"
   url "https://github.com/termsurf/homebrew-load"
-  version "0.0.22"
+  version "0.0.24"
   sha256 "f6eb7406f21ac3cc54580c4bb4d232d2f8ad7d63dc0d6159276f21cfa79cecea"
 
   depends_on macos: ">= :sierra"
