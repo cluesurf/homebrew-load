@@ -2,8 +2,8 @@ cask "task" do
   name "task"
   desc "Common Actions Interface Dependencies"
   homepage "https://github.com/termsurf/task"
-  url "https://github.com/termsurf/homebrew-load/raw/make/Casks/task.zip"
-  version "0.0.28"
+  url "https://github.com/termsurf/homebrew-load/raw/make/Tool/task.zip"
+  version "0.0.30"
   sha256 "68b79d6f77ff1a78dfa874e0da28b048dacf3c6812cf4d8d647421fc1c8e24f9"
 
   depends_on macos: ">= :sierra"
@@ -31,7 +31,7 @@ cask "task" do
   depends_on formula: "swift"
   depends_on formula: "rust"
 
-  installer script: "Casks/task.install.sh"
+  installer script: "install.sh"
 
   postflight do
     system_command "#{HOMEBREW_PREFIX}/bin/go", args: ["install", "github.com/klauspost/asmfmt/cmd/asmfmt@ef134b9cec704e2b7b336fb02153b7d1a58247da"]
