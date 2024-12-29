@@ -38,6 +38,7 @@ cask "task" do
   depends_on formula: "php"
   depends_on formula: "antlr"
   depends_on formula: "black"
+  depends_on formula: "php-cs-fixer"
 
   installer script: "install.sh"
 

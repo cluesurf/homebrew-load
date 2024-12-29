@@ -7,9 +7,9 @@
 <br/>
 <br/>
 
-<h3 align='center'>@termsurf/homebrew-load</h3>
+<h3 align='center'>@cluesurf/homebrew-load</h3>
 <p align='center'>
-  TermSurf Taps for Homebrew (MacOS)
+  ClueSurf Taps for Homebrew (MacOS)
 </p>
 
 <br/>
@@ -19,13 +19,13 @@
 ## Installation
 
 ```bash
-brew tap termsurf/load
+brew tap cluesurf/load
 ```
 
 ### Task
 
 ```bash
-brew install termsurf/load/task
+brew install cluesurf/load/task
 ```
 
 Might have to run this first.

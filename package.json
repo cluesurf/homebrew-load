@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "load:make": "brew install --cask ./Casks/task.rb",
-    "link:brew": "ln -s $(pwd) `brew --repo`/Library/Taps/termsurf"
+    "link:brew": "ln -s $(pwd) `brew --repo`/Library/Taps/cluesurf"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.191",
