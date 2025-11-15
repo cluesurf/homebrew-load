@@ -1,8 +1,8 @@
-cask "task" do
-  name "task"
+cask "hack" do
+  name "hack"
   desc "Common Actions Interface Dependencies"
-  homepage "https://github.com/termsurf/task"
-  url "https://github.com/termsurf/homebrew-load/raw/make/Tool/task.zip"
+  homepage "https://github.com/termsurf/hack"
+  url "https://github.com/termsurf/homebrew-load/raw/make/Tool/hack.zip"
   version "0.0.44"
   sha256 "c065d769b89fe209152a3c64034bd46355c01868c0ebbbb06173870d8324a649"
 
