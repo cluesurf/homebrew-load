@@ -24,7 +24,7 @@ brew tap cluesurf/code
 ### Task
 
 ```bash
-brew install cluesurf/code/hack
+brew install cluesurf/code/task
 ```
 
 Might have to run this first.

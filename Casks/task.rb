@@ -1,8 +1,8 @@
-cask "hack" do
-  name "hack"
+cask "task" do
+  name "task"
   desc "Common Actions Interface Dependencies"
-  homepage "https://github.com/termsurf/hack"
-  url "https://github.com/termsurf/homebrew-load/raw/make/Tool/hack.zip"
+  homepage "https://github.com/cluesurf/task"
+  url "https://github.com/cluesurf/homebrew-code/raw/make/Tool/task.zip"
   version "0.0.44"
   sha256 "c065d769b89fe209152a3c64034bd46355c01868c0ebbbb06173870d8324a649"
 
@@ -14,6 +14,8 @@ cask "hack" do
   depends_on cask: "libreoffice"
   depends_on formula: "imagemagick"
   depends_on formula: "fontforge"
+  depends_on formula: "woff2"
+  depends_on formula: "harfbuzz"
   depends_on formula: "ffmpeg"
   depends_on formula: "go"
   depends_on formula: "unoconv"
@@ -39,6 +41,17 @@ cask "hack" do
   depends_on formula: "antlr"
   depends_on formula: "black"
   depends_on formula: "php-cs-fixer"
+  depends_on formula: "duckdb"
+  depends_on formula: "ripgrep"
+  depends_on formula: "fd"
+  depends_on formula: "eye-d3"
+  depends_on formula: "id3v2"
+  depends_on formula: "p7zip"
+  depends_on formula: "atool"
+  depends_on formula: "qpdf"
+  depends_on formula: "poppler"
+  depends_on formula: "mupdf"
+  depends_on formula: "ghostscript"
 
   installer script: "install.sh"
 
@@ -51,6 +64,8 @@ cask "hack" do
     system_command "#{HOMEBREW_PREFIX}/bin/pip3", args: ["install", "--upgrade", "--no-cache-dir", "--use-deprecated=legacy-resolver", "docx2pdf"]
     system_command "#{HOMEBREW_PREFIX}/bin/pip3", args: ["install", "--upgrade", "--no-cache-dir", "--use-deprecated=legacy-resolver", "black[jupyter]"]
     system_command "#{HOMEBREW_PREFIX}/bin/pip3", args: ["install", "--upgrade", "--no-cache-dir", "--use-deprecated=legacy-resolver", "patool"]
+    system_command "#{HOMEBREW_PREFIX}/bin/pip3", args: ["install", "--upgrade", "--no-cache-dir", "--use-deprecated=legacy-resolver", "huggingface_hub"]
+    system_command "#{HOMEBREW_PREFIX}/bin/pip3", args: ["install", "--upgrade", "--no-cache-dir", "--use-deprecated=legacy-resolver", "fonttools"]
   end
 
   def caveats
