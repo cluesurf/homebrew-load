@@ -167,6 +167,14 @@ cask "task" do
   # `task download video` — yt-dlp covers 1500+ sites
   depends_on formula: "yt-dlp"
 
+  # Local TLS / HTTPS dev workflow:
+  # `task issue tls` / `task rotate tls`     — mkcert
+  # `task serve tls` / `task proxy tls`      — caddy
+  # `task trust tls` / `task untrust tls`    — system tools (`security`)
+  # `task verify tls`                        — Node built-in `tls`
+  depends_on formula: "mkcert"
+  depends_on formula: "caddy"
+
   # Pentest aggregator coverage (hackingtool integration)
 
   # Network / port scanners
