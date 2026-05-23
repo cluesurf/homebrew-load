@@ -8,7 +8,7 @@
 
 <h3 align='center'>@cluesurf/homebrew-tool</h3>
 <p align='center'>
-  ClueSurf Homebrew tap — desktop tools and CLI dependency catalogs.
+  ClueSurf Homebrew things
 </p>
 
 <br/>
@@ -23,10 +23,10 @@ brew tap cluesurf/tool
 
 ## What this tap ships
 
-| Cask | What | Install |
-|---|---|---|
+| Cask                            | What                                                             | Install                                  |
+| ------------------------------- | ---------------------------------------------------------------- | ---------------------------------------- |
 | [`task`](./Tool/task/readme.md) | Native tool catalog for `@cluesurf/task` (~100 formulas + casks) | `brew install --cask cluesurf/tool/task` |
-| [`rock`](./Tool/rock/readme.md) | Rock.app — headless, hackable terminal workspace | `brew install --cask cluesurf/tool/rock` |
+| [`rock`](./Tool/rock/readme.md) | Rock.app — headless, hackable terminal workspace                 | `brew install --cask cluesurf/tool/rock` |
 
 See each cask's readme for install + usage details.
 
