@@ -2,7 +2,7 @@ cask "rock" do
   name "Rock"
   desc "Headless, hackable terminal workspace system"
   homepage "https://github.com/cluesurf/rock"
-  version "0.0.0"
+  version "0.0.4"
 
   # The published artifact is a zipped Rock.app produced by
   # `electron-builder --mac` and uploaded to GitHub Releases.
@@ -10,7 +10,7 @@ cask "rock" do
   # simplicity; the .app contains a universal binary slice
   # picker if you ship a universal2 build, or platform-specific
   # zips can be selected via `on_arm` / `on_intel` blocks.
-  url "https://github.com/cluesurf/rock/releases/download/v#{version}/Rock-#{version}-mac.zip"
+  url "https://github.com/cluesurf/rock/releases/download/v0.0.4/Rock-0.0.4-arm64-mac.zip"
 
   # Placeholder sha256. Replace after each release:
   #   shasum -a 256 dist/Rock-<version>-mac.zip
