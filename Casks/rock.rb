@@ -2,24 +2,24 @@ cask "rock" do
   name "Rock"
   desc "A Hackable Terminal ⊡"
   homepage "https://github.com/cluesurf/rock"
-  version "0.0.6"
+  version "0.1.2"
 
   # URL uses #{version} interpolation so ship.sh only has
   # to rewrite the `version` and `sha256` lines on each
   # release — the URL self-updates from there. The published
   # artifact is a zipped Rock.app from `electron-builder
   # --mac` uploaded to GitHub Releases.
-  url "https://github.com/cluesurf/rock/releases/download/v#{version}/Rock-#{version}-arm64-mac.zip"
+  url "https://github.com/cluesurf/rock/releases/download/v0.1.2/Rock-0.1.2-arm64-mac.zip"
 
   # ship.sh rewrites this hash on every release. :no_check
   # is the initial value before the script has run.
-  sha256 "4e65849a5407ed34ba7bf86f8e85046fe501853f87e3da4ff792bf43f16c84de"
+  sha256 "230b894f17a59ee5e680ac5108b08c832d70b7da232e415df26b7c4a5baf0469"
 
   # livecheck tells brew (and `brew upgrade --cask`) where
   # to look for new versions. Uses the GitHub Releases tag
   # list as the source of truth.
   livecheck do
-    url :stable
+    url "https://github.com/cluesurf/rock/releases/download/v0.1.2/Rock-0.1.2-arm64-mac.zip"
     strategy :github_latest
   end
 
