@@ -6,7 +6,10 @@ cask "task" do
   version "0.5.4"
   sha256 "c065d769b89fe209152a3c64034bd46355c01868c0ebbbb06173870d8324a649"
 
-  depends_on macos: ">= :sierra"
+  # Sierra and earlier were removed from Homebrew's known
+  # macOS versions (those releases are years past EOL).
+  # Catalina is the oldest constant Homebrew still accepts.
+  depends_on macos: ">= :catalina"
 
   # Kept in sync with load/linux/shared/deps.sh and
   # load/windows/shared/deps.sh in the @cluesurf/task repo.
