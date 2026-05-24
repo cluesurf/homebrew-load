@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "load:make": "brew install --cask ./Casks/task.rb",
-    "link:brew": "ln -s $(pwd) `brew --repo`/Library/Taps/cluesurf"
+    "link:brew": "ln -s $(pwd) `brew --repo`/Library/Taps/cluesurf",
+    "sync:rock": "tsx task/sync-rock.ts"
   },
   "devDependencies": {
     "@types/lodash": "4.17.23",
